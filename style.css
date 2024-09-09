@@ -1,0 +1,176 @@
+/* Importing Google Font- montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+* {
+      font-family: "montserrat", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;   
+}
+/* body styling */
+body{
+         background: #4159e44f;
+         display: flex;
+         align-items: center;
+         min-height: 100vh;
+         justify-content: center;
+}
+
+/* container styling */
+.container {
+       background: #fff; 
+       border-radius: 10px;
+       max-width: 476px;
+       flex-grow: 1;
+       box-shadow: 0 13px 29px rgba(0, 0, 0, 0.5); 
+}
+
+/* search section styling */
+.search-section{
+         display: flex;
+         padding: 25px;
+         align-items: center;
+         gap: 15px;
+}
+
+.search-section .input-wrapper{
+         height:54px;
+         width: 100%;
+         position: relative;
+}
+
+.search-section .input-wrapper span{
+         position: absolute;
+         top:50%;
+         left: 17px;
+         transform: translateY(-50%);
+         pointer-events: none;
+}
+
+.search-section .search-input{
+         width: 100%;
+         height: 100%;
+         font-size: 1rem;
+         font-weight: 500;
+         text-transform: uppercase;
+         padding: 0 20px 0 50px;
+         border: 1px solid #beb0ff;
+         border-radius: 12px;
+         transition: 0.1s ease;
+         box-shadow: 0 1px 12px rgba(53, 7, 160, 0.336);
+}
+
+.search-section .search-input:focus{
+      box-shadow: none;
+           border-color:#a894ff; 
+}
+
+.search-section .search-input::placeholder{
+         text-transform: none;
+}
+
+.search-section .location-button{
+         height: 54px;
+         width: 56px;
+         outline: none;
+         cursor: pointer;
+         background: #fff;
+         border-radius: 24%;
+         border:1px solid #beb0ff;
+         display: flex;
+         flex-shrink: 0;
+         align-items: center;
+         justify-content: center;
+         color: #5f41e4;
+         transition: 0.4s ease;
+         box-shadow: 0 1px 12px rgba(53, 7, 160, 0.336) ;
+}
+
+.search-section .location-button:hover{
+         background: #5f41e4;
+         border-color: #5f41e4;
+         color:#fff;
+}
+
+.search-section .location-button span{
+         font-size: 1.5rem; 
+}
+
+/* weather section styling */
+.weather-section .current-weather{
+         display: flex;
+         flex-direction: column;
+         padding: 20px 0px 50px;
+         align-items: center;
+}
+.current-weather .weather_icon{
+         width: 140px;
+         aspect-ratio: 1;
+}
+.current-weather .temperature{
+         font-size: 3.1rem;
+         margin: 23px 0;
+         display: flex;
+         text-shadow: 4px 2px rgba(53, 7, 160, 0.336);
+}
+.current-weather .temperature span{
+         font-size: 1.56rem;
+         font-weight: 500;
+         margin: 0 0 2px;
+}
+.current-weather .description{
+         font-size: 1.15rem;
+         font-weight: 500;
+         text-shadow: 2px 2px rgba(53, 7, 160, 0.236);
+}
+
+
+
+/* hourly weather forcast list */
+.hourly_weather{
+         padding: 16px 25px;
+         border-top: 2px solid #d5ccff;
+}
+.hourly_weather .weather-list{
+         display: flex;
+         list-style: none;
+         gap: 45px;
+         padding-bottom: 16px;
+         margin-bottom: -16px;
+         overflow-x: auto;
+         scrollbar-width: thin;
+         scrollbar-color: transparent transparent;
+}
+.hourly_weather .weather-list .time{
+      white-space: nowrap;
+}
+.hourly_weather:hover .weather-list{
+         scrollbar-color: #bfbfbf transparent; 
+}
+.hourly_weather .weather-items{
+         display: flex;
+         flex-direction: column;
+         gap: 5px;
+         align-items: center;
+         font-weight: 500;
+}
+.hourly_weather .weather-items .weather_icon{
+         width: 32px;
+         aspect-ratio: 1;
+}
+
+/* media queries for responsiveness of the website */
+@media(max-width: 624px){
+         body{
+                  padding: 15px;
+         }
+         .search-section{
+                  padding: 20px;
+         }
+         .hourly_weather{
+                  padding: 16px 20px;
+         }
+         .hourly_weather .weather-list{
+                  gap: 32px;
+         }
+}
