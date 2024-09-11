@@ -3,7 +3,7 @@ const searchLocation = document.querySelector(".location-button");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const hourlyWeatherDiv = document.querySelector(".hourly_weather .weather-list");
 
-const API_key = "";
+const API_key = "4bc70e3f1615428199540907240809";
 
 
 // Weather Codes for weather icons for the display to be updated
