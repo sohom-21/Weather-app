@@ -160,17 +160,17 @@ body{
 }
 
 /* media queries for responsiveness of the website */
-@media(max-width: 624px){
+@media(max-width: 424px){
          body{
-                  padding: 15px;
+                  padding: 10px;
          }
          .search-section{
-                  padding: 20px;
+                  padding: 10px;
          }
          .hourly_weather{
-                  padding: 16px 20px;
+                  padding: 11px 18px;
          }
          .hourly_weather .weather-list{
-                  gap: 32px;
+                  gap: 27px;
          }
 }
